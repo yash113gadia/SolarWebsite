@@ -129,7 +129,14 @@ const App = () => {
   };
 
   return (
-    <div className="min-h-screen bg-slate-50 font-sans text-slate-800">
+    <div className="min-h-screen bg-slate-50 font-sans text-slate-800 relative">
+      {/* Watermark */}
+      <div className="fixed inset-0 flex items-center justify-center pointer-events-none z-0 overflow-hidden">
+         <h1 className="text-6xl md:text-9xl font-black text-slate-300 opacity-20 transform -rotate-45 select-none whitespace-nowrap">
+            qlaa developers
+         </h1>
+      </div>
+
       {/* Navigation */}
       <nav className="bg-white shadow-md sticky top-0 z-50">
         <div className="container mx-auto px-4 py-3 flex justify-between items-center">
